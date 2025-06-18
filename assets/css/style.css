@@ -28,8 +28,9 @@ nav ul{
 .botao{
     background-color: var(--verde);
     color: var(--branco);
-    height: 20px;
-    width: 100px;
+    height: 25px;
+    width: 100%;
+    text-align: center;
 }
 
 #menuLateral {
