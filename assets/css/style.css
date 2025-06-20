@@ -1,0 +1,49 @@
+@charset 'UTF-8';
+:root{
+    --verde: #227930;
+    --branco: #fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: var(--branco);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header img{
+    width: 100px;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.botao{
+    background-color: var(--verde);
+    color: var(--branco);
+    height: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+#menuLateral {
+    display: none;
+}
+
+/* VERSÃO DE CELULAR  */
+
+@media screen and (max-width: 412px){
+    header ul{
+        display: none;
+    }
+    #menuLateral{
+        display: block;
+    }
+}
