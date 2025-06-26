@@ -1,100 +1,150 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
 :root{
-    --verde: #227930;
-    --branco: #fff;
+  --corHeader: #0b6608;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: "Poppins", sans-serif;
+
+body {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+
 }
 header{
-    background-color: var(--branco);
-    padding: 15px;
+    background-color: var(--corHeader);
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
-header img{
-    width: 100px;
+.menu {
+   display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
 }
 
-nav ul{
-    display: flex;
-    gap: 30px;
-    text-decoration: none;
-    list-style-type: none;
-    align-items: center;
-    display: flex;
+.logo {
+  width: 150px;
+  margin-left: 20px;
 }
-.botao{
-
-    color: black;
-    width: 125px;
-    border-radius: 11px;
-    text-align: center;
-    align-items: center;
+.menu nav{
+    margin-left: 400px;
+}
+.menu nav ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  margin: 0;
+  padding: 0;
 }
 
-.botao:hover{
-    background-color: var(--verde);
-    color: var(--branco);
-    transition: 0.7s;
+.menu nav li {
+  display: inline-block;
+  
 }
-#menuLateral {
-    display: none;
+
+.menu nav a {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  padding: 4px 0;
+  display: block;
 }
-.botaoPgMbl{
-    color: var(--branco);
-    background-color: var(--verde);
-    padding-left: 10px;
-    transition: 0.3s;
+
+.menu nav a::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #51ff00a4;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
 }
-#imgPrincipal {
-    background-image: url(../img/82fcfdcd-3f7d-4f19-98a6-8fc305b756a5.jpeg);
-    background-size: cover;
+
+.menu nav a:hover::before {
+  transform: scale3d(1,1,1);
+  transform-origin: 100% 50%;
+}
+#banner{
+    background-image: url(../img/banner.jpeg);
     background-position: center;
+    background-size: cover;
     width: 100%;
-    height: 400px;
-    color: var(--branco);
-    display: flex;
-    align-items: center;
-    
+    height: 500px;
+}
+main h1{
+  text-align: center;
+  margin-top: 30px;
+}
+#bemVindo{
+  
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#bvTexto{
+  text-align: center;
+  background-color: var(--corHeader);
+  font-size: large;
+  margin-top: 30px;
+  border-radius: 17px;
+  width: 700px;
+  height: 400px;
+ 
+}
+#bemVindo img{
+  height: 340px;
+  width: 600px;
+  margin-top: 30px;
+  align-self: center;
+}
+#cardsPagInicial{
+  display: flex;
+  justify-content: space-around;
+ margin-top: 30px;
+}
+.cardSementes{
+  box-shadow: 10px 10px 10px rgb(219, 219, 219);
+  width: 210px;
+  height: 210px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 30px;
+}
+.cardSementes:hover{
+   transform: scale(1.05) translateY(-5px);
+}
+.cardSementes img{
+  width: 100px;
+}
+.cardSementes a{
+  text-decoration: none;
+  width: 100px;
+  background-color: var(--corHeader);
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 10px;
+  
+}
+.cardSementes p{
+  margin: 12px;
+}
+#produtos{
+  text-align: center;
+  margin-top: 30px;
 }
 
-#h1Img{
-    padding-left: 100px;
-    
-}
-#h1Img h1{
-    font-size: 5rem;
-}
 
-/* VERSÃO DE CELULAR  */
-
-@media screen and (max-width: 412px){
-    header ul{
-        display: none;
-    }
-    #menuLateral{
-        display: block;
-    }
-    #imgPrincipal{
-        background-position: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    #h1Img {
-        padding-left: 20px;
-        font-size: 2rem;
-    }
-    #h1Img h1 {
-        font-size: 2rem;
-    }
-}
