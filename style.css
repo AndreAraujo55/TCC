@@ -8,7 +8,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: #e8f5e9;
   color: #333;
   line-height: 1.6;
 }
@@ -20,7 +20,7 @@ body {
   background-image: url("img/BANNER22.jfif");
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 865px;
   position: relative;
 }
 
@@ -139,8 +139,8 @@ body {
 .feirantes {
   padding: 2px 300px;
   text-align: center;
- 
   background-color: #e8f5e9;
+  margin-top: 20px;
 }
 
 .secao-titulo{
@@ -152,6 +152,7 @@ body {
   flex-wrap: wrap;
   gap: 5px;
   align-items: center;
+  margin-top: 40px;
 }
 
 .feirantes-left,
@@ -163,14 +164,16 @@ body {
   width: 70%;
   height: 70%;
   border-radius: 15px;
+  margin-top: 20px;
 }
 
-.feirantes-img-bottom img {
-  width: 55%;
+.feirantes-right img{
+  width: 100%;
   margin-top: 10px;
   border-radius: 20px;
-   margin-left: 500px
-  
+   margin-left: 10px;
+   margin-top: 20;
+
 }
 
 /* Projeto */
