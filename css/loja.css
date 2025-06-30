@@ -7,8 +7,45 @@
 }
 
 
+body{
+    background-color: whitesmoke;   
+}
 
+/*header*/
 
+#linkEspecial a{
+    background-color: #828282;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.container_links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 50px;
+    margin-right: 100px;
+    gap: 40px;
+    list-style: none;
+}
+
+.container_links ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color:  black;
+}
+
+/*main*/
+
+.imagem-container img{
+    margin-top: 60px;
+    margin-left: 76px;
+    width: 475px;
+    height: 513x;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 .modal {
     display: none;
@@ -26,6 +63,7 @@
     border-radius: 10px;
     text-align: center;
 }
+
 
 .verduras img,
 .frutas img,
