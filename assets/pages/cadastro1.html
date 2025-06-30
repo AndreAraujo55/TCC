@@ -10,15 +10,17 @@
 <body>
     <header>
         <nav id="banner">
-            <div id="containerH">
-            <img src="../img/imgsLoja/logo.png" alt="">
-            <ul>
-                <li>Home</li>
-                <li>Loja</li>
-                <li>Projeto</li>
-                <li>Cadastro</li>
-            </ul>
+          <div id="containerH">
+            <div class="logo">
+              <img src="/img/logo VV.png" alt="Logo Vida Verde" />
             </div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="loja.html">Loja</a></li>
+              <li><a href="projeto.html">Projeto</a></li>
+              <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+          </div>
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" id="menu">Menu</button>
 
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
@@ -56,12 +58,21 @@
 
                      <span id="erro"></span>
 
-                    <button type="submit">Cadastrar</button>
+                     <button onclick="abrirModal() ">Cadastrar</button>
+
+                     <div id="meuModal" class="modal">
+                       <div class="modal-conteudo">
+                         <p>Seu cadastro foi realizado com sucesso! 🥳</p>
+                         <button onclick="fecharModal()">Fechar</button>
+                       </div>
+                     </div>
 
                     
             </form>
          </div>
         </div>
+
+
     </main>
 
      <footer class="footer">
@@ -100,6 +111,7 @@
     </div>
   </footer>
     <script src="../js/cadastroloja.js"></script>
+    <script src="../js/botaoCad.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
