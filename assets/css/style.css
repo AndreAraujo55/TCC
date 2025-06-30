@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 :root{
     --verde: #227930;
     --branco: #fff;
@@ -77,7 +77,7 @@ nav ul{
 
 /* VERSÃO DE CELULAR  */
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 800px){
     header ul{
         display: none;
     }
