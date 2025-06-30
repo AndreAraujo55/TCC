@@ -5,38 +5,57 @@
     padding: 0;
     box-sizing: border-box;
 }
-#banner{
-    margin: 10px;
-    background-image: url(../img/imgsLoja/baqnner.jpg);
-    background-size: cover;
-    height: 500px;
-}
-#containerH{
-    display: flex;
-    justify-content: space-around;
-}
-#banner img{
-    width: 150px;
-}
-#banner ul {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-    margin-top: 20px;
+#banner {
+  background-image: url("/img/BANNER22.jfif");
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  position: relative;
 }
 
-#banner ul li {
-    color: white;
-    font-size: 20px;
-    padding: 8px 16px;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-    cursor: pointer;
-    height: 40px;
+#containerH {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
 }
 
-#banner ul li:hover {
-    background-color: rgba(18, 18, 18, 0.5);
+.logo img {
+  width: 150px;
+}
+
+#containerH ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+#containerH ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#containerH ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.titulo-banner-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titulo-banner {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 #containerL {
   display: flex;
@@ -97,6 +116,23 @@
 
 span{
     color: red;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-conteudo {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 #menu{
   display: none;

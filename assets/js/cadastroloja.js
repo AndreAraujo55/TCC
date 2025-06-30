@@ -10,6 +10,6 @@
     } else {
       erro.textContent = '';
       
-      window.location.href = '../pages/cadastro2.html';
+     
     }
   });
