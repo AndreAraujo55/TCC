@@ -1,55 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horta Solidária</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vida Verde | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="/assets/img/cropped-Logo-Horta-1-1.jpg" alt="">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Projeto</li>
-                <li>Loja</li>
-                <li class="botao">Seja voluntário</li>
-            </ul>
-            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" id="menuLateral">
-                Menu
-              </a>         
-              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Horta Solidária</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <div>
-                    A Horta Solidária é um espaço de cultivo comunitário que promove a sustentabilidade, a alimentação saudável e a solidariedade. Aqui você encontra informações, imagens, dicas e muito mais sobre como fazer parte dessa transformação.
-                  </div>
-                  <div class="botaoPgMbl">
-                   
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Projeto</a>
-                      <a class="dropdown-item" href="#">Loja</a>
-                  </div>
-                </div>
-              </div>
-        </nav>
-    </header>
-    <section id="imgPrincipal" class="imgPrincipalMobile">
-        <div id="h1Img">
-      <h1>Programa</h1>
-      <h1>Horta</h1>
-      <h1>Solidária</h1>
-        </div>
-    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <!-- Header com banner e logo -->
+  <header id="banner">
+    <div id="containerH">
+      <div class="logo">
+        <img src="img/logo VV.png" alt="Logo Vida Verde" />
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="loja.html">Loja</a></li>
+        <li><a href="projeto.html">Projeto</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </div>
+    <div class="titulo-banner-container">
+      <h1 class="titulo-banner">VIDA VERDE</h1>
+    </div>
+  </header>
+
+  <!-- Seção Produtos -->
+  <section class="produtos">
+    <h2 class="titulo-produtos">
+      NOSSOS PRODUTOS
+    </h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="img/1..jpg" alt="Semente de frutas" />
+        <h3>SEMENTE DE FRUTAS</h3>
+        <p>Frutas saborosas para plantar em casa ou no campo. Escolha a sua!</p>
+        <a href="loja.html" class="btn">saiba mais</a>
+      </div>
+      <div class="card">
+        <img src="img/2..jpg" alt="Semente de legumes" />
+        <h3>SEMENTE DE LEGUMES</h3>
+        <p>Do vasinho à horta: legumes frescos para todo tipo de cultivo.</p>
+        <a href="loja.html" class="btn">saiba mais</a>
+      </div>
+      <div class="card">
+        <img src="img/3..jpg" alt="Semente de verduras" />
+        <h3>SEMENTE DE VERDURAS</h3>
+        <p>Verduras sempre à mão, seja no quintal ou na horta.</p>
+        <a href="loja.html" class="btn">saiba mais</a>
+      </div>
+      <div class="card">
+        <img src="img/4..jpg" alt="Terra fértil" />
+        <h3>TERRA</h3>
+        <p>Solo fértil para todos os tamanhos de cultivo. Encontre o ideal!</p>
+        <a href="loja.html" class="btn">saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Feirantes -->
+  <section class="feirantes">
+    <h2 class="secao-titulo">FEIRANTES COM FUTURO</h2>
+    <div class="feirantes-content">
+      <div class="feirantes-left">
+        <img src="img/img11.jpg" width="4000" height="300" alt="Tomates" />
+      </div>
+      <div class="feirantes-right"> 
+        <p>Acreditamos no poder das feiras livres e dos pequenos produtores.</p>
+        <p>Por isso, oferecemos um programa exclusivo para feirantes que desejam vender sem precisar investir um capital inicial.</p>
+        <p>Se você é feirante e busca apoio para crescer, inscreva-se no nosso programa e tenha acesso a produtos da nossa horta, estrutura de vendas e oportunidades únicas.</p>
+        <a href="cadastro.html" class="btn">Saiba mais e inscreva-se</a>
+      </div>
+    </div>
+    <div class="feirantes-img-bottom">
+      <img src="img/img12.jpg" alt="Alface" />
+    </div>
+  </section>
+
+  <!-- Seção Projeto -->
+  <section class="projeto">
+    <h2 class="secao-titulo2">PROJETO VIDA VERDE</h2>
+    <div class="projeto-container">
+      <div class="projeto-texto">
+        <p>Nosso e-commerce de sementes vai além da venda: 10% de cada compra é revertido para a nossa Horta Solidária, que cultiva alimentos orgânicos em São Paulo.</p>
+        <p>Esses alimentos são doados a feirantes cadastrados no projeto e também abastecem nossas feiras sociais realizadas duas vezes por ano, em abril (Páscoa) e dezembro (Natal).</p>
+        <p>Nessas ocasiões, famílias de baixa renda podem comprar alimentos frescos e orgânicos com preços simbólicos. Toda a arrecadação é reinvestida no projeto, promovendo um ciclo de solidariedade e sustentabilidade.</p>
+        <a href="projeto.html" class="btn">Saiba mais sobre o projeto →</a>
+      </div>
+      <div class="projeto-img">
+        <img src="img/img13.jpg" alt="Campo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>Sobre Nós</h3>
+        <p>Somos apaixonados por plantar um futuro melhor. Cada semente que você compra ajuda a transformar vidas.</p>
+      </div>
+      <div class="footer-box">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="loja.html">Catálogo de Sementes</a></li>
+          <li><a href="projeto.html">Projeto Horta Solidária</a></li>
+          <li><a href="#">Doações e Impacto</a></li>
+          <li><a href="cadastro.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Contato</h3>
+        <p>📍 São Paulo – SP</p>
+        <p>✉️ contato@vidaverde.com.br</p>
+        <p>📞 (11) 99999–9999</p>
+      </div>
+      <div class="footer-box">
+        <h3>Newsletter</h3>
+        <p>Receba novidades e dicas de cultivo:</p>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Digite seu e-mail" required />
+          <button type="submit">Assinar</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Projeto Vida Verde. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
