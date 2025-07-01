@@ -8,7 +8,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #e8f5e9;
+  background-color: white;
   color: #333;
   line-height: 1.6;
 }
@@ -24,35 +24,27 @@ body {
   position: relative;
 }
 
-#containerH {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+#linkEspecial a{
+    background-color: #828282;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
 }
 
-.logo img {
-  width: 150px;
+.container_links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 50px;
+    margin-right: 100px;
+    gap: 40px;
+    list-style: none;
 }
 
-#containerH ul {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-
-#containerH ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-#containerH ul li a:hover {
-  background-color: rgba(56, 55, 55, 0.2);
+.container_links ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color:  black;
 }
 
 .titulo-banner-container {

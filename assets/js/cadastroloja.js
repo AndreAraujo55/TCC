@@ -9,6 +9,6 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
     erro.textContent = 'Acesso negado: as senhas não coincidem.';
   } else {
     erro.textContent = '';
-    abrirModal(); // Só chama aqui se estiver tudo certo
+    abrirModal(); 
   }
 });
