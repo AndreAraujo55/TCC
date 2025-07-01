@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="/index.html">HOME</a></li>
                 <li><a href="/pages/loja.html">LOJA</a></li>
-                <li><a href="#"></a>PROJETO</li>
+                <li><a href="#">PROJETO</a></li>
                 <li id="linkEspecial"><a href="/pages/cadastro1.html">CADASTRE-SE</a></li>
             </ul>
         </div>
@@ -24,16 +24,39 @@
 <main>
 
     <div class="imagem-container">
-        <img src="../img/imgsLoja/fruta/fruta2.jpeg" alt="Loja de Sementes" />
-        <div>
-            
+        <img src="/img/imgsLoja/fruta/fruta2.jpeg" alt="Loja de Sementes" />
+        <div class="container_nome">
+            <h2>MELANCIA</h2><br>
+            <p id=money>SEMENTE DE MELANCIA</p><br>
+            <P>$15,99</P><br>
+            <button onclick="abrirModal()">Fazer compra</button>
         </div>
     </div>
 
-    <button onclick="abrirModal()">Abrir Pop-up</button>
+    
+    <section class="Produtos">
+
+            <aside class="frutas">
+                <p id="p_principal">Frutas</p>
+            </aside>
+            
+            <aside class="verduras">
+                <p id="p_principal">Verduras</p>
+            </aside>
+
+            <aside class="legumes">
+                <p id="p_principal">Legumes</p>
+            </aside>
+
+            <aside class="terras">
+                <p id="p_principal">Terras</p>
+            </aside>
+    </section>
+
+
     <div id="meuModal" class="modal">
       <div class="modal-conteudo">
-        <p>Este é um pop-up personalizado!</p>
+        <p>Compra realizada 👌</p>
         <button onclick="fecharModal()">Fechar</button>
       </div>
     </div>
