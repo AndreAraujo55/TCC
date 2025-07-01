@@ -39,7 +39,20 @@
     </header>
 
     <main>
-        <div id="containerL">
+        <div id="container">
+                      <div id="cadastre-se">
+                        <h2>CADASTRE-SE</h2>
+                       <p>Como se cadastrar:</p>
+
+                       <ol>
+                        <li>Digite seu nome completo no campo indicado.</li>
+                        <li>Informe seu e-mail válido, pois será usado para confirmação e acesso.</li>
+                        <li>Crie uma senha segura com pelo menos 6 caracteres.</li>
+                        <li>Confirme a senha digitando novamente no campo abaixo.</li>
+                        <li>Clique no botão “Continuar” para finalizar o cadastro.</li>
+
+                       </ol>
+                       </div>
             <div id="login">
                 <h1>Cadastro</h1>
 
@@ -51,19 +64,19 @@
                     <input type="email" name="email" id="email" required>
 
                     <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" required>
+                    <input type="password" name="senha" minlength="4" maxlength="6" id="senha" required>
 
                     <label for="confirmeSenha">Confirme sua senha:</label>
-                    <input type="password" name="confirmeSenha" id="confirmeSenha" required>
+                    <input type="password" name="confirmeSenha" minlength="4" maxlength="6" id="confirmeSenha" required>
 
                      <span id="erro"></span>
 
-                     <button onclick="abrirModal() ">Cadastrar</button>
+                     <button type="submit">Continuar</button>
 
                      <div id="meuModal" class="modal">
                        <div class="modal-conteudo">
                          <p>Seu cadastro foi realizado com sucesso! 🥳</p>
-                         <button onclick="fecharModal()">Fechar</button>
+                         <button type="button" onclick="fecharModal()">Fechar</button>
                        </div>
                      </div>
 

@@ -5,14 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-#banner {
-  background-image: url("/img/BANNER22.jfif");
-  background-size: cover;
-  background-position: center;
-  height: 750px;
-  position: relative;
+body{
+  
 }
-
 #containerH {
   display: flex;
   justify-content: space-between;
@@ -31,7 +26,7 @@
 }
 
 #containerH ul li a {
-  color: white;
+  color: grey;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -41,7 +36,8 @@
 }
 
 #containerH ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: gray;
+  color: white;
 }
 
 .titulo-banner-container {
@@ -57,14 +53,20 @@
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
-#containerL {
+#container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80vh; 
-  
+  background-color: #f5f5f5;
 }
-
+#cadastre-se{
+  margin-right: 80px;
+  font-size: large;
+}
+#cadastre-se ol{
+  margin-top: 40px;
+}
 #login {
   background-color: #fffeb5;
   padding: 40px;

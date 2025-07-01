@@ -1,7 +1,7 @@
 function abrirModal() {
-    document.getElementById('meuModal').style.display = 'flex';
-  }
+  document.getElementById('meuModal').style.display = 'flex';
+}
 
-  function fecharModal() {
-    document.getElementById('meuModal').style.display = 'none';
-  }
+function fecharModal() {
+  document.getElementById('meuModal').style.display = 'none';
+}
