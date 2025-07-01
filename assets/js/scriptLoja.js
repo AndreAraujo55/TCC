@@ -1,3 +1,12 @@
+function abrirModal() {
+    document.getElementById('meuModal').style.display = 'flex';
+}
+
+function fecharModal() {
+    document.getElementById('meuModal').style.display = 'none';
+}
+
+
 const frutas   = document.querySelector(".frutas");
 const legumes  = document.querySelector(".legumes");
 const verduras = document.querySelector(".verduras");
@@ -34,10 +43,9 @@ function gerarCard(element) {
     return `
         <div class="card">
             <img src="${element.img}" alt="">
+            <h3>${element.Nome}</h3>
             <p>${element.Descricao}</p>
-            <button id="butaoCompra">COMPRA</button>
+            <p>R$ ${element.Preco}</p>
         </div>
     `;
 }
-
-
